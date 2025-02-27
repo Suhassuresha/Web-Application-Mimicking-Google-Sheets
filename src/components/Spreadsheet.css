@@ -1,0 +1,192 @@
+/* Fullscreen Layout */
+.spreadsheet-container {
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title Bar */
+.title-bar {
+    display: flex;
+    align-items: center;
+    background: #f1f3f4;
+    padding: 0px 16px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #202124;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    height: 40px;
+}
+
+/* Toolbar */
+.toolbar {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 40px;
+    z-index: 4;
+}
+
+/* Formula Bar */
+.formula-bar {
+    display: flex;
+    padding: 8px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 80px;
+    z-index: 4;
+}
+
+.formula-bar input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Sticky Column Headers */
+thead th {
+    position: sticky;
+    top: 120px;
+    background: #f1f3f4;
+    z-index: 3;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Scrollable Table */
+.spreadsheet-wrapper {
+    flex-grow: 1;
+    overflow: auto;
+    height: calc(100vh - 160px);
+    position: relative;
+}
+
+/* Table Layout */
+table {
+    border-collapse: collapse;
+    background: white;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 0;
+}
+
+/* Fix Column & Row Headers */
+thead {
+    display: table-header-group;
+}
+
+tbody {
+    display: table-row-group;
+}
+
+/* Column Widths */
+td {
+    border: 1px solid #ddd;
+    text-align: center;
+    height: 40px;
+    position: relative;
+    min-width: 100px;
+}
+
+/* Fix First Column (Row Numbers) */
+th:first-child,
+td:first-child {
+    width: 50px;
+    min-width: 50px;
+    text-align: center;
+    background: #f1f3f4;
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    font-weight: bold;
+}
+
+/* Row Header */
+td.row-header {
+    font-weight: bold;
+    background: #f1f3f4;
+    position: sticky;
+    left: 0;
+    z-index: 2;
+}
+
+/* Resizable Columns */
+th {
+    position: relative;
+}
+
+th::after {
+    content: "";
+    position: absolute;
+    right: -2px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    cursor: col-resize;
+}
+
+/* Improve Scrolling */
+tbody {
+    overflow-y: auto;
+    width: 100%;
+}
+
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* Input Styling */
+td input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    text-align: center;
+    background: transparent;
+}
+
+/* Hover Effect */
+td:hover {
+    background: #f8f9fa;
+}
+
+/* Selected Cell */
+td.selected {
+    background: rgba(26, 115, 232, 0.2);
+}
+
+/* Smooth Scrolling */
+.spreadsheet-wrapper::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.spreadsheet-wrapper::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.spreadsheet-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}

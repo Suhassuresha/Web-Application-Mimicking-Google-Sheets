@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Web-Application-Mimicking-Google-Sheets/static/css/main.0fcab338.css",
+    "main.js": "/Web-Application-Mimicking-Google-Sheets/static/js/main.6f7d8404.js",
+    "index.html": "/Web-Application-Mimicking-Google-Sheets/index.html",
+    "main.0fcab338.css.map": "/Web-Application-Mimicking-Google-Sheets/static/css/main.0fcab338.css.map",
+    "main.6f7d8404.js.map": "/Web-Application-Mimicking-Google-Sheets/static/js/main.6f7d8404.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0fcab338.css",
+    "static/js/main.6f7d8404.js"
+  ]
+}

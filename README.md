@@ -17,7 +17,7 @@ Welcome to the Web Application Mimicking Google Sheets! This project aims to pro
 
 The Web Application Mimicking Google Sheets is designed to replicate some of the core functionalities of Google Sheets. Users can add and delete rows and columns, apply formulas, and style cells. The application is built with accessibility and ease of use in mind, providing a familiar interface for users who are accustomed to traditional spreadsheet software.
 
-[Check out the live project here](http://your-live-project-link.com)
+[Check out the live project here](https://suhassuresha.github.io/Web-Application-Mimicking-Google-Sheets/)
 
 ## Features
 

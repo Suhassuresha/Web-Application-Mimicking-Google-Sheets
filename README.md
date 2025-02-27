@@ -116,8 +116,8 @@ To get started with the Web Application Mimicking Google Sheets, follow these st
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/web-spreadsheet-app.git
-   cd web-spreadsheet-app
+   git clone https://github.com/Suhassuresha/Web-Application-Mimicking-Google-Sheets.git
+   cd Web-Application-Mimicking-Google-Sheets
    ```
 
 2. Install dependencies:
